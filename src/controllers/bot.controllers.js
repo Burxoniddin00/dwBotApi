@@ -49,7 +49,7 @@ export const Post = async (req, res) => {
               quality: "highest",
             });
             const mp4FileStream = fs.createWriteStream(
-              process.cwd() + "/server/vid" + mp4DownloadPath
+              process.cwd() + "/src/vid" + mp4DownloadPath
             );
             mp4DownloadStream.pipe(mp4FileStream);
   
@@ -60,7 +60,7 @@ export const Post = async (req, res) => {
                 quality: "highestaudio",
               });
               const mp3FileStream = fs.createWriteStream(
-                process.cwd() + "/server/Aud" + mp3DownloadPath
+                process.cwd() + "/src/Aud" + mp3DownloadPath
               );
               mp3DownloadStream.pipe(mp3FileStream);
   
@@ -146,7 +146,7 @@ export const Post = async (req, res) => {
               quality: "highest",
             });
             const mp4FileStream = fs.createWriteStream(
-              process.cwd() + "/server/vid" + mp4DownloadPath
+              process.cwd() + "/src/vid" + mp4DownloadPath
             );
             mp4DownloadStream.pipe(mp4FileStream);
   
@@ -157,7 +157,7 @@ export const Post = async (req, res) => {
                 quality: "highestaudio",
               });
               const mp3FileStream = fs.createWriteStream(
-                process.cwd() + "/server/Aud" + mp3DownloadPath
+                process.cwd() + "/src/Aud" + mp3DownloadPath
               );
               mp3DownloadStream.pipe(mp3FileStream);
   
